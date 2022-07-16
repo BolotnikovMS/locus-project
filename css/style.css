@@ -65,7 +65,7 @@ body {
   position: absolute;
   width: 100px;
   height: 100px;
-  background: #fff url(/img/how-it-works/play.svg) center no-repeat;
+  background: #fff url(../img/how-it-works/play.svg) center no-repeat;
   left: -157px;
   top: -37px;
   border-radius: 50%;
@@ -97,7 +97,7 @@ body {
 .heading-subtitle-double-underscore:after {
   content: '';
   height: 30px;
-  background: #fff url(/img/our-project/cards/subtitle-line.svg) no-repeat;
+  background: #fff url(../img/our-project/cards/subtitle-line.svg) no-repeat;
   background-position: center;
   position: absolute;
   left: 0;
