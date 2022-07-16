@@ -26,15 +26,20 @@ body {
   color: #fff;
   background-color: #58A9A5;
   border-radius: 15px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
 }
 
 .btn:hover, a.btn:hover {
   background-color: #fff;
-  box-shadow: -2px 4px 10px rgba(88, 169, 165, 0.8);
+  -webkit-box-shadow: -2px 4px 10px rgba(88, 169, 165, 0.8);
+          box-shadow: -2px 4px 10px rgba(88, 169, 165, 0.8);
   color: #58A9A5;
   border: 1px solid #58A9A5;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .btn-fw-7 {
@@ -53,11 +58,15 @@ body {
   letter-spacing: 6px;
   position: relative;
   display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .button-play:hover {
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .button-play::after {
@@ -109,6 +118,8 @@ body {
 /* Header */
 .header {
   padding: 85px 0 0;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
@@ -116,20 +127,31 @@ body {
   position: fixed;
   top: 0;
   z-index: 2;
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   padding: 15px 0 10px;
   width: 100%;
 }
 
 .header-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header-logo__logo + * {
@@ -143,6 +165,8 @@ body {
 }
 
 .header-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -151,6 +175,8 @@ body {
 }
 
 .header-nav a {
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
@@ -164,6 +190,8 @@ body {
 }
 
 .home-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -178,8 +206,13 @@ body {
 .home-content__text {
   font-size: 30px;
   line-height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .home-content__text span {
@@ -222,8 +255,12 @@ body {
 }
 
 .video {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-height: 350px;
   max-width: 1612px;
 }
@@ -236,7 +273,8 @@ body {
 .video-img-wrapper img{
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .video__description {
@@ -260,6 +298,8 @@ body {
 }
 
 .description-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -319,9 +359,12 @@ body {
 }
 
 .ourproject-card {
+  display: -ms-grid;
   display: grid;
   grid-template-columns: repeat(auto-fit, 453px);
-  column-gap: 120px;
+  -webkit-column-gap: 120px;
+     -moz-column-gap: 120px;
+          column-gap: 120px;
 }
 
 .card {
@@ -369,9 +412,15 @@ body {
 }
 
 .testimonial-companies {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Возможно для адаптива на гридах сделать */
@@ -381,6 +430,8 @@ body {
 
 .testimonial-card {
   max-height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -396,6 +447,8 @@ body {
 }
 
 .testimonial-card-content-statistics {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -456,6 +509,8 @@ body {
 }
 
 .contactus-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -495,8 +550,13 @@ body {
 }
 
 .form-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .form-wrap + * {
@@ -525,7 +585,8 @@ body {
 .form__message {
   resize: none;
   padding: 10px;
-  box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+  -webkit-box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+          box-shadow:4px 4px 10px rgba(0,0,0,0.06);
   border-radius: 10px;
   height: 150px;
   font-weight: 500;
@@ -540,8 +601,12 @@ body {
 }
 
 .form-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .form-btn button + * {
@@ -556,11 +621,19 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -581,7 +654,8 @@ body {
   position: relative;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.6);
   width: 900px;
 }
 
@@ -591,9 +665,13 @@ body {
   top: 15px;
   right: 25px;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .popup__close:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
