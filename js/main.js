@@ -1,7 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
   // AOS 
   AOS.init({
-    once: false
+    once: false,
+    duration: 700,
   })
 
   // Scroll
@@ -21,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const header = document.querySelector('.header')
 
   function checkScroll() {
-    if (window.scrollY > 20) {
+    if (window.scrollY > 2) {
       header.classList.add('header-scroll')
     } else {
       header.classList.remove('header-scroll')
@@ -74,4 +75,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Mask form
   $("#phone").mask("+7 (999) - 999 - 9999")
+
+  // Mobile nav
+  const mobNavBtn = document.querySelector('.mobile-nav-button')
+  const mobNavIcon = document.querySelector('.mobile-nav-button__icon')
+  const mobNav = document.querySelector('.mobile-nav')
+
+  mobNavBtn.addEventListener('click', () => {
+    mobNavIcon.classList.toggle('active')
+    mobNav.classList.toggle('active')
+    document.body.classList.toggle('no-scroll')
+  })
 })
