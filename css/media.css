@@ -804,6 +804,15 @@
     margin-top: 20px;
     margin-left: unset;
   }
+
+  .popup-signup .form-btn {
+    flex-direction: column-reverse;
+  }
+
+  .popup-signup .form-btn button + * {
+    margin-bottom: 20px;
+    margin-left: unset;
+  }
 }
 
 @media (max-width: 550px) {
