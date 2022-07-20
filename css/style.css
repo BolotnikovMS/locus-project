@@ -451,6 +451,10 @@ body {
           align-items: center;
 }
 
+.testimonial-companies + * {
+  margin-top: 20px;
+}
+
 /* Возможно для адаптива на гридах сделать */
 .testimonial-companies img + img {
   margin-left: 90px;
@@ -570,6 +574,10 @@ body {
   width: 1110px;
 }
 
+.contactus-btn {
+  display: none;
+}
+
 /* Form */
 .form {
   border: 1px solid #486958;
@@ -643,6 +651,7 @@ body {
 
 /* Popup */
 .popup {
+  z-index: 22;
   position: fixed;
   top: 0;
   left: 0;
