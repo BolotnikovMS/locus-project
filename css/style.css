@@ -12,6 +12,7 @@ body {
 
 .no-scroll {
   overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -135,6 +136,7 @@ body {
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  z-index: 10000;
 }
 
 .header.header-scroll {
@@ -651,7 +653,7 @@ body {
 
 /* Popup */
 .popup {
-  z-index: 22;
+  z-index: 30000;
   position: fixed;
   top: 0;
   left: 0;
