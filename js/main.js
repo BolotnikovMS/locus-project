@@ -80,10 +80,20 @@ window.addEventListener('DOMContentLoaded', () => {
   const mobNavBtn = document.querySelector('.mobile-nav-button')
   const mobNavIcon = document.querySelector('.mobile-nav-button__icon')
   const mobNav = document.querySelector('.mobile-nav')
+  const mobileNavList = document.querySelector('.mobile-nav-list')
+  const mobileLinks = mobileNavList.querySelectorAll('a[href*="#"]')
 
   mobNavBtn.addEventListener('click', () => {
     mobNavIcon.classList.toggle('active')
     mobNav.classList.toggle('active')
     document.body.classList.toggle('no-scroll')
+  })
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobNavIcon.classList.toggle('active')
+      mobNav.classList.toggle('active')
+      document.body.classList.toggle('no-scroll')
+    })
   })
 })
